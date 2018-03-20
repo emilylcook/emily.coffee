@@ -18,6 +18,17 @@ body {
     justify-content: center;
 }
 
+body.detail-page{
+  height: 96vh;
+  min-height: auto;
+  background:red;
+  background-color: #f2eedd;
+  background-image: linear-gradient(to bottom, #7de2fc 0%, #ffecd2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hello {
     position: absolute;
     top: 50vh;
@@ -48,7 +59,7 @@ body {
 .cat{
   height: 100%;
   width: 100%;
-  background: url(cat.png);
+  background: url(../cat.png);
   background-size: 150px;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -185,5 +196,61 @@ body {
 
 .fullscreen &:hover {    svg {
         fill: url(#gradient-2);
+    }
+}
+
+
+@media only screen and (max-height: 600px)
+{
+  .cat-container{
+    height:100px;
+    bottom: -12px;
+  }
+  .cat {
+    background-size:contain;
+  }
+
+  .detail-page .wrapper{
+    overflow: scroll;
+    height: 80vh;
+    width: unset !important;
+    max-width: 90vw !important;
+  }
+}
+
+
+@media only screen and (max-width: 600px)
+{
+  .cat-container{
+    width:60px;
+    z-index:-66;
+    bottom: -13px;
+  }
+  .cat {
+    background-size:contain;
+  }
+
+  hr.blue-rule.bottom{
+    width:75vw;
+  }
+
+  .location-block{
+    display:none;
+  }
+
+  .fa {
+    font-size: 40px;
+  }
+
+  .button {
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    transform: translateX(-50%);
+    bottom: 40vh;
+    margin: 0;
+    font-size: 20px;
+    line-height: 33rem;
+
     }
 }

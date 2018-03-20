@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
-import logo from './logo.svg';
-import './App.css';
+import Letter from './common/Letter'
+import logo from '../logo.svg';
+import { Link } from 'react-router-dom'
 
 /**
  * -------------------------------------------------------
@@ -14,10 +15,6 @@ import './App.css';
  * https://github.com/jscottsmith/react-scroll-parallax
  *
  */
-
-const getRandomInt = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-};
 
 const P1 = {
     bounds: [134, 281],
@@ -233,31 +230,7 @@ const M1 = {
 const parallaxWord = [P1, A2, R3, A4, L5, L6, A7, X8];
 const word = [E1, M1, I1, L1, Y1];
 
-class Letter extends React.Component {
-    render() {
-        const { letter } = this.props;
-        const offset = getRandomInt(100, 170);
-        const isSlower = true;// getRandomInt(0, 1) ? true : false;
-        return (
-            <div className="letter" style={{
-                width: letter.bounds[0] / 10 + 'rem',
-                height: letter.bounds[1] / 10 + 'rem',
-            }}>
-                {letter.forms.map((X, i) =>
-                    <Parallax
-                        className="form"
-                        key={i}
-                        offsetYMin={-offset * (i + 1) + 'px'}
-                        offsetYMax={offset * (i + 1) + 'px'}
-                        slowerScrollRate={isSlower}
-                    >
-                        {X}
-                    </Parallax>
-                )}
-            </div>
-        );
-    }
-}
+
 
 const Hello = () => (
     <div className="hello">
@@ -286,12 +259,11 @@ const Linkedin = () => (
   </div>
 );
 
-const Cat = () => (
-    <div className='cat-container'>
-      <div className='cat'>
-
-      </div>
-    </div>
+const AboutMeBtn = () => (
+  <div className="button-container">
+    <Link to='/about' className="top button">About</Link>
+    <Link to='/about' className="bottom button">About</Link>
+  </div>
 );
 
 const ParallaxWord = () => (
@@ -302,7 +274,7 @@ const ParallaxWord = () => (
     </div>
 );
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <div className="App">
@@ -312,8 +284,7 @@ class App extends Component {
             <Scroll />
             <Gradients />
             <ParallaxWord />
-            <Linkedin />
-            <Cat />
+            <AboutMeBtn />
           </main>
         </ParallaxProvider>
       </div>
@@ -321,4 +292,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home
