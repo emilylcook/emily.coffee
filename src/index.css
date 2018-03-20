@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+    font-size: 0.5vw;
+}
+
+body {
+    position: relative;
+    background-color: #f2eedd;
+    background-image: linear-gradient(to bottom, #7de2fc 0%, #ffecd2 100%);
+    height: 400rem;
+    min-height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hello {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    width: 14rem;
+    height: auto;
+    font-family: Futura, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 33rem;
+    color: #405d86;
+}
+
+.hello p{
+  margin: 0;
+}
+
+.cat-container{
+    position: absolute;
+    bottom: -33px;
+    right: 0;
+    height: 40vh;
+    width:200px;
+}
+
+.cat{
+  height: 100%;
+  width: 100%;
+  background: url(cat.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+}
+
+.scroll {
+    position: absolute;
+    top: 50vh;
+    left: 80%;
+    margin-left: -7rem;
+    width: 14rem;
+    height: auto;
+    font-family: Futura, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #405d86;
+}
+
+.scroll svg {
+    margin: 0 2rem;
+}
+
+.word {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.letter {
+    position: relative;
+    margin: 0 1.8rem;
+
+}
+
+.letter &:first-of-type {
+  margin-right: -2rem;
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fill-1 {
+    fill: url(#gradient-2);
+}
+
+.fill-2 {
+    fill: url(#gradient-6);
+}
+
+.fill-3 {
+    fill: url(#gradient-3);
+}
+
+.fill-4 {
+    fill: url(#gradient-1);
+}
+
+.fill-5 {
+    fill: url(#gradient-4);
+}
+
+.fill-6 {
+    fill: url(#gradient-5);
+}
+
+.hidden {
+    position: absolute;
+    top: -1000rem;
+    left: -1000rem;
+    width: 0;
+    height: 0;
+}
+
+.button {
+    position: absolute;
+    width: 24rem;
+    height: 10rem;
+    bottom: 50vh;
+    left: 50%;
+    margin-left: -12rem;
+
+    font-family: Futura, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    line-height: 10rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #ffffff;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.button-container a.bottom {
+  background-image: linear-gradient(to bottom, #8d63b1 0%, #8179cb 100%);
+}
+
+.button-container a.bottom:hover {
+  opacity:0;
+}
+
+.button-container a.top{
+    background-image: linear-gradient(to bottom, #405d86 0%, #384257 100%);
+}
+
+.fullscreen {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    bottom: 20px;
+    right: 20px;
+    svg {
+        fill: url(#gradient-5);
+    }
+}
+
+.fullscreen &:hover {    svg {
+        fill: url(#gradient-2);
+    }
+}
