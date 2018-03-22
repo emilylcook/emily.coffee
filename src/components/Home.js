@@ -165,10 +165,10 @@ const AboutMeBtn = () => (
 
 const EmilyHeader = () => (
     <div id='EmilyHeader'>
-      <div className='left'>
-        HI, I''m
+      <div className='left fade-in'>
+        HI, I'm
       </div>
-      <div className='word'>
+      <div className='word slide-left'>
           {word.map((X, i) =>
               <Letter key={i} letter={X} />
           )}

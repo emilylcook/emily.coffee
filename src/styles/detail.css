@@ -1,13 +1,30 @@
 #EmilyHeader {
-    display: flex;
+   display: flex;
+    height: 50vh;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
 }
 
 #EmilyHeader .left{
   order: 1;
+  text-align: right;
+  width: 30vw;
+  color: white;
+  font-size: 80px;
+  margin-right: 20px;
 }
 
 #EmilyHeader .word {
   order:2
+}
+
+main{
+  height:100%;
+}
+
+.App {
+  height: 100%;
 }
 
 hr.blue-rule{
@@ -136,4 +153,83 @@ a > .fa:hover{
 {
 
 
+}
+
+
+/* animation play */
+.fade-in
+{
+   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 4s; /* Firefox < 16 */
+       -ms-animation: fadein 4s; /* Internet Explorer */
+        -o-animation: fadein 4s; /* Opera < 12.1 */
+           animation: fadein 4s;
+}
+
+/* fade in play */
+.slide-left
+{
+   -webkit-animation: slide-in-left  4s ; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: slide-in-left  4s; /* Firefox < 16 */
+       -ms-animation: slide-in-left  4s; /* Internet Explorer */
+        -o-animation: slide-in-left  4s; /* Opera < 12.1 */
+           animation: slide-in-left  4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+   100% { right: 0; }
+}
+
+
+@keyframes slide-in-left {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slide-in-left {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slide-in-left {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slide-in-left {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slide-in-left {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
 }
