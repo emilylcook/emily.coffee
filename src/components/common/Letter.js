@@ -19,8 +19,10 @@ class Letter extends React.Component {
                     <Parallax
                         className="form"
                         key={i}
-                        offsetYMin={-offset * (i + 1) + 'px'}
-                        offsetYMax={offset * (i + 1) + 'px'}
+                      //  offsetYMin={-offset * (i + 1) + 'px'}
+                      //  offsetYMax={offset * (i + 1) + 'px'}
+                      offsetYMin={'0px'}
+                      offsetYMax={'0px'}
                         slowerScrollRate={isSlower}
                     >
                         {X}
