@@ -1,4 +1,14 @@
+#EmilyHeader {
+    display: flex;
+}
 
+#EmilyHeader .left{
+  order: 1;
+}
+
+#EmilyHeader .word {
+  order:2
+}
 
 hr.blue-rule{
   border: 0;

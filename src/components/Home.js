@@ -163,12 +163,17 @@ const AboutMeBtn = () => (
   </div>
 );
 
-const ParallaxWord = () => (
-    <div className="word">
-        {word.map((X, i) =>
-            <Letter key={i} letter={X} />
-        )}
-    </div>
+const EmilyHeader = () => (
+    <div id='EmilyHeader'>
+      <div className='left'>
+        HI, I''m
+      </div>
+      <div className='word'>
+          {word.map((X, i) =>
+              <Letter key={i} letter={X} />
+          )}
+      </div>
+  </div>
 );
 
 class Home extends Component {
@@ -178,8 +183,10 @@ class Home extends Component {
         <ParallaxProvider>
           <main>
             <Gradients />
-            <ParallaxWord />
-            <AboutMeBtn />
+            <EmilyHeader />
+          {
+            //  <AboutMeBtn />
+          }
           </main>
         </ParallaxProvider>
       </div>
