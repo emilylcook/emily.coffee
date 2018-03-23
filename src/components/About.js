@@ -34,10 +34,16 @@ class About extends Component {
           </div>
           <hr className='blue-rule' />
           <ContactMeForm contactMeSection={this.state.contactMeSection} />
+          <div className='detail-body'>
           <h3 className='greeting'>Hello :)</h3>
           <p>
             I'm emily.  Lick left leg for ninety minutes, still dirty chew foot. Suddenly go on wild-eyed crazy rampage try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard cereal boxes make for five star accommodation or all of a sudden cat goes crazy pounce on unsuspecting person. Instead of drinking water from the cat bowl, make sure to steal water from the toilet curl into a furry donut, but i cry and cry and cry unless you pet me and then maybe i cry just for fun for sniff other cat's butt and hang jaw half open thereafter but thug cat . Love to play with owners hair tie head nudges yet yowling nonstop the whole night always hungry for mew yet ooh, are those your $250 dollar sandals? lemme use that as my litter box.
-          </p>
+
+              I'm emily.  Lick left leg for ninety minutes, still dirty chew foot. Suddenly go on wild-eyed crazy rampage try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard cereal boxes make for five star accommodation or all of a sudden cat goes crazy pounce on unsuspecting person. Instead of drinking water from the cat bowl, make sure to steal water from the toilet curl into a furry donut, but i cry and cry and cry unless you pet me and then maybe i cry just for fun for sniff other cat's butt and hang jaw half open thereafter but thug cat . Love to play with owners hair tie head nudges yet yowling nonstop the whole night always hungry for mew yet ooh, are those your $250 dollar sandals? lemme use that as my litter box.
+
+                I'm emily.  Lick left leg for ninety minutes, still dirty chew foot. Suddenly go on wild-eyed crazy rampage try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard cereal boxes make for five star accommodation or all of a sudden cat goes crazy pounce on unsuspecting person. Instead of drinking water from the cat bowl, make sure to steal water from the toilet curl into a furry donut, but i cry and cry and cry unless you pet me and then maybe i cry just for fun for sniff other cat's butt and hang jaw half open thereafter but thug cat . Love to play with owners hair tie head nudges yet yowling nonstop the whole night always hungry for mew yet ooh, are those your $250 dollar sandals? lemme use that as my litter box.
+            </p>
+          </div>
           <div className='bottom-row'>
             <div className='location-block'>
               <i className='fa fa-home' /><p>Seattle, WA</p>
