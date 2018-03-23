@@ -188,6 +188,30 @@ body{
 
 @media only screen and (max-height: 814), screen and (max-width: 1120px)
 {
+  body{
+    height: auto;
+  }
+
+  .cat-container {
+    height: 250px;
+  }
+
+  .About.detail-page{
+    margin-bottom:100px;
+  }
+
+  .page-wrapper {
+    height: auto;
+  }
+
+  .detail-page .wrapper {
+    padding-top: 10px;
+  }
+
+  .detail-page .wrapper {
+    width: 90vw;
+  }
+
   #EmilyHeader{
     flex-direction: column;
     margin-left: 30px;
@@ -198,6 +222,16 @@ body{
     text-align: left;
   }
 
+  .button {
+    width: 110px;
+    height: 40px;
+    bottom: 20vh;
+    left: 50%;
+    z-index:1;
+    transform: translateX(-50%);
+    line-height: 40px;
+    font-size: 15px;
+  }
 
   .word.small {
     display:flex;

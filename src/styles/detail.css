@@ -19,6 +19,12 @@
   order:2
 }
 
+.detail-page .wrapper {
+  width: 70vw;
+  padding-top: 50px;
+  margin: auto;
+}
+
 main{
   height:100%;
 }
@@ -138,10 +144,10 @@ a > .fa:hover{
   }
 
   div.detail-page div.wrapper{
-      width:100vw;
+      /*width:100vw;
       max-width:auto;
       min-width:85vw;
-      margin:1em;
+      margin:1em;*/
   }
 
   .detail-page p {

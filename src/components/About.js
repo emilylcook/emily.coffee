@@ -2,20 +2,6 @@ import React, { Component } from 'react'
 
 class About extends Component {
 
-  componentWillMount() {
-    document.body.classList.toggle('detail-page', true)
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      document.body.style.backgroundColor = 'blue'; // ask about this
-    }, 1)
-  }
-
-  componentWillUnmount() {
-    document.body.classList.toggle('detail-page', false)
-  }
-
   render() {
     return (
       <div className='About detail-page'>
@@ -38,7 +24,9 @@ class About extends Component {
                 <a href='https://www.facebook.com/emilycookx' rel="noopener" target="_blank"><i className='fa fa-facebook-square'></i></a>
             </div>
           </div>
-          <hr className='blue-rule bottom' />
+          {
+            //<hr className='blue-rule bottom' />
+          }
         </div>
       </div>
     );
