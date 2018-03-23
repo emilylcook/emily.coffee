@@ -39,9 +39,11 @@ hr.blue-rule{
   background: #51939d;
   display: block;
   clear: both;
-  margin: 3em 0;
+  margin-top: 3em;
+  vertical-align: bottom;
+  -webkit-margin-after: 0;
   padding: 0;
-  border-radius: 0.55em;
+  // border-radius: 0.55em;
 }
 
 hr.blue-rule.bottom{
@@ -266,7 +268,6 @@ a > .fa:hover{
   0%   { transform: translate( 500%, 0); }
   100% { transform: translate( 0%, 0); }
 }
-
 
 
 @keyframes slide-down {

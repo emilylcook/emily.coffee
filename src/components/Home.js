@@ -190,9 +190,7 @@ class Home extends Component {
           <main>
             <Gradients />
             <EmilyHeader />
-          {
-             <AboutMeBtn />
-          }
+            <AboutMeBtn />
           </main>
         </ParallaxProvider>
       </div>

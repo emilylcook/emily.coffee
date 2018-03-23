@@ -5,6 +5,7 @@ import About from './About'
 import Cat from './common/Cat'
 import '../styles/App.css';
 import '../styles/detail.css';
+import '../styles/contactme.css';
 
 const Main = () => (
   <main>
