@@ -21,9 +21,15 @@ class About extends Component {
     return (
       <div className='About detail-page'>
         <div className='wrapper'>
-          <h1 className='title'>Emily Cook</h1>
-          <h2 className='sub-title'>DEVELOPER, CAT WHISPERER</h2>
-          <div id="ContactMeBtn" onClick={this.toggleContact} className='button btn'>Contact Me</div>
+          <div class="heading">
+            <div class="title">
+              <h1 className='title'>Emily Cook</h1>
+              <h2 className='sub-title'>DEVELOPER, CAT WHISPERER</h2>
+            </div>
+            <div class="buttons">
+              <div id="ContactMeBtn" onClick={this.toggleContact} className='button btn'>Contact Me</div>
+            </div>
+          </div>
           <hr className='blue-rule' />
             <div ref='ContactMeSection' className={`contact-me collapsible ${this.state.contactMeSection}`}>
                 dummy form here

@@ -159,8 +159,8 @@ const Linkedin = () => (
 
 const AboutMeBtn = () => (
   <div className="button-container fade-in-slow">
-    <Link to='/about' className="top button">About</Link>
-    <Link to='/about' className="bottom button">About</Link>
+    <Link to='/about' className="top abt button">About</Link>
+    <Link to='/about' className="bottom abt button">About</Link>
   </div>
 );
 

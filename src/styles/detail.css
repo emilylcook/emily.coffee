@@ -19,6 +19,43 @@
   order:2
 }
 
+.heading{
+  display:flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+
+.heading .title{
+  order:1;
+   margin-bottom: 15px;
+}
+
+.heading .buttons{
+  order:2;
+  align-self: flex-end;
+  color:#f3eded;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.heading .buttons .button{
+  transition-duration: 3s;
+}
+
+.heading .buttons:hover{
+  color:#959fa0;
+}
+
+.button{
+  font-family: Futura, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
 .detail-page .wrapper {
   width: 70vw;
   padding-top: 50px;
@@ -39,7 +76,7 @@ hr.blue-rule{
   background: #51939d;
   display: block;
   clear: both;
-  margin-top: 3em;
+  // margin-top: 3em;
   vertical-align: bottom;
   -webkit-margin-after: 0;
   padding: 0;

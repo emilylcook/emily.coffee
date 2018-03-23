@@ -131,15 +131,13 @@ body{
     fill: url(#gradient-5);
 }
 
-.button {
+.abt.button {
   position: absolute;
     width: 20rem;
     height: 8rem;
     bottom: 10vh;
     left: 50%;
     margin-left: -12rem;
-    font-family: Futura, Helvetica, sans-serif;
-    font-weight: bold;
     letter-spacing: 0.3rem;
     text-align: center;
     line-height: 8rem;
@@ -148,9 +146,6 @@ body{
     text-decoration: none;
     color: #ffffff;
 
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
 }
 
 .button-container a.bottom {
@@ -181,7 +176,7 @@ body{
     }
 }
 
-.word.small {
+.small {
   display:none;
 }
 
@@ -235,7 +230,7 @@ body{
     text-align: left;
   }
 
-  .button {
+  .abt.button {
     width: 110px;
     height: 40px;
     bottom: 20vh;
@@ -246,11 +241,19 @@ body{
     font-size: 15px;
   }
 
-  .word.small {
+  .About .heading {
+    flex-direction: column;
+  }
+
+  .button {
+    font-size:13px;
+  }
+
+  .small {
     display:flex;
   }
 
-  .word.big{
+  .big{
     display:none;
   }
 }
