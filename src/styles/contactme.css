@@ -1,16 +1,40 @@
 .contact-me {
   margin: auto;
-  background-color: rgba(255,236,210, .5);
+  background-color: rgba(255,236,210, .3);
   border: 1px solid #51939D;
 
   transition:all 1s ease-out;
-  height:300px;
+  height:450px;
   /*  transform:scaleY(1); */
   transform-origin:top;
+  overflow: hidden;
 }
 
 .contact-me.collapsed {
   /*transform:scaleY(0);*/
   height:0;
-  overflow: hidden;
+}
+
+#ContactMeSection .container{
+  display:flex;
+  flex-direction: column;
+  margin-top:20px;
+}
+
+#ContactMeSection .form-group{
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  margin-bottom:10px;
+  font-size:15px;
+}
+
+
+#ContactMeSection .item{
+      width: 100%;
+      padding: 10px 5px;
+}
+
+textarea{
+  resize:none;
 }
