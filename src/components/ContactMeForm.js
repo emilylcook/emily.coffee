@@ -41,8 +41,10 @@ class ContactMeForm extends Component {
             <textarea id='message' name='message' className='item' placeholder='Write something..' rows='5' required></textarea>
           </div>
 
-          <div className='form-group'>
-            <input type='button' className='button item' onClick={this.submitEmail} value='Submit' />
+          <div className='form-group submit-container '>
+            <div className="button-container">
+              <div type='button' className='button item' onClick={this.submitEmail}>Submit</div>
+            </div>
           </div>
 
         </form>

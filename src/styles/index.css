@@ -149,15 +149,15 @@ body{
 
 }
 
-.button-container a.bottom {
+.button-container .bottom {
   background-image: linear-gradient(to bottom, #8d63b1 0%, #8179cb 100%);
 }
 
-.button-container a.bottom:hover {
+.button-container .bottom:hover {
   opacity:0;
 }
 
-.button-container a.top{
+.button-container .top{
     background-image: linear-gradient(to bottom, #405d86 0%, #384257 100%);
 }
 
