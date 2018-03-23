@@ -196,8 +196,20 @@ body{
     height: 250px;
   }
 
+  .bottom-row {
+    flex-direction: column;
+  }
+
+  .location-block {
+    align-self: auto;
+  }
+
+  .fa {
+    font-size: 40px;
+  }
+
   .About.detail-page{
-    margin-bottom:100px;
+    margin-bottom:210px;
   }
 
   .page-wrapper {
