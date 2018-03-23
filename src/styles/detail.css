@@ -166,6 +166,17 @@ a > .fa:hover{
            animation: fadein 4s;
 }
 
+.fade-in-slow
+{
+  opacity: 0;
+   -webkit-animation: fadein 4s forwards; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 4s forwards; /* Firefox < 16 */
+       -ms-animation: fadein 4s forwards; /* Internet Explorer */
+        -o-animation: fadein 4s forwards; /* Opera < 12.1 */
+           animation: fadein 4s forwards;
+           animation-delay: 4s;
+}
+
 /* fade in play */
 .slide-left
 {
@@ -174,6 +185,17 @@ a > .fa:hover{
        -ms-animation: slide-in-left  4s; /* Internet Explorer */
         -o-animation: slide-in-left  4s; /* Opera < 12.1 */
            animation: slide-in-left  4s;
+}
+
+
+/* fade in play */
+.slide-down
+{
+   -webkit-animation: slide-down 4s ; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: slide-down  4s; /* Firefox < 16 */
+       -ms-animation: slide-down  4s; /* Internet Explorer */
+        -o-animation: slide-down  4s; /* Opera < 12.1 */
+           animation: slide-down  4s;
 }
 
 @keyframes fadein {
@@ -206,30 +228,61 @@ a > .fa:hover{
 
 
 @keyframes slide-in-left {
-  0%   { transform: translate( 0, -500%); }
+  0%   { transform: translate( 500%, 0); }
   100% { transform: translate( 0%, 0); }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes slide-in-left {
-  0%   { transform: translate( 0, -500%); }
+  0%   { transform: translate( 500%, 0); }
   100% { transform: translate( 0%, 0); }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes slide-in-left {
-  0%   { transform: translate( 0, -500%); }
+  0%   { transform: translate( 500%, 0); }
   100% { transform: translate( 0%, 0); }
 }
 
 /* Internet Explorer */
 @-ms-keyframes slide-in-left {
-  0%   { transform: translate( 0, -500%); }
+  0%   { transform: translate( 500%, 0); }
   100% { transform: translate( 0%, 0); }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes slide-in-left {
+  0%   { transform: translate( 500%, 0); }
+  100% { transform: translate( 0%, 0); }
+}
+
+
+
+@keyframes slide-down {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slide-down {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slide-down {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slide-down {
+  0%   { transform: translate( 0, -500%); }
+  100% { transform: translate( 0%, 0); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slide-down {
   0%   { transform: translate( 0, -500%); }
   100% { transform: translate( 0%, 0); }
 }

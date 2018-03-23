@@ -5,22 +5,20 @@ const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-class Letter extends React.Component {
+class LetterSmall extends React.Component {
     render() {
         const { letter } = this.props;
         const offset = getRandomInt(100, 170)
         const isSlower = true;// getRandomInt(0, 1) ? true : false;
         return (
               <div className="letter" style={{
-                  width: letter.bounds[0] / 10 + 'rem',
-                  height: letter.bounds[1] / 10 + 'rem',
+                  width: letter.bounds[0] / 5 + 'rem',
+                  height: letter.bounds[1] / 5 + 'rem',
               }}>
                   {letter.forms.map((X, i) =>
                       <Parallax
                           className="form"
                           key={i}
-                        //  offsetYMin={-offset * (i + 1) + 'px'}
-                        //  offsetYMax={offset * (i + 1) + 'px'}
                         offsetYMin={'0px'}
                         offsetYMax={'0px'}
                           slowerScrollRate={isSlower}
@@ -32,4 +30,5 @@ class Letter extends React.Component {
         );
     }
 }
-export default Letter
+
+export default LetterSmall

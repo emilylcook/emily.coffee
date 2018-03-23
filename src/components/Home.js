@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
 import Letter from './common/Letter'
+import LetterSmall from './common/LetterSmall'
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom'
 
@@ -157,7 +158,7 @@ const Linkedin = () => (
 );
 
 const AboutMeBtn = () => (
-  <div className="button-container">
+  <div className="button-container fade-in-slow">
     <Link to='/about' className="top button">About</Link>
     <Link to='/about' className="bottom button">About</Link>
   </div>
@@ -168,9 +169,14 @@ const EmilyHeader = () => (
       <div className='left fade-in'>
         HI, I'm
       </div>
-      <div className='word slide-left'>
+      <div className='word big slide-down'>
           {word.map((X, i) =>
               <Letter key={i} letter={X} />
+          )}
+      </div>
+      <div className='word small slide-left'>
+          {word.map((X, i) =>
+              <LetterSmall key={i} letter={X} />
           )}
       </div>
   </div>
@@ -185,7 +191,7 @@ class Home extends Component {
             <Gradients />
             <EmilyHeader />
           {
-            //  <AboutMeBtn />
+             <AboutMeBtn />
           }
           </main>
         </ParallaxProvider>
