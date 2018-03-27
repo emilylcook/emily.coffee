@@ -34,7 +34,15 @@
 #ContactMeSection .item{
       width: 100%;
       padding: 10px 5px;
+      border: 1px solid rgba(66, 30, 30, 0.2);
 }
+
+
+#ContactMeSection .item:focus{
+  outline-width: inherit;
+  border: 1px solid rgba(66, 30, 30, 0.4);
+}
+
 
 textarea{
   resize:none;
